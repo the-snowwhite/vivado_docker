@@ -22,15 +22,14 @@ RUN apt-get update && apt-get install -y \
 COPY install_config.txt /tmp/
 ADD Xilinx_Vivado_SDK_2017.3_1005_1.tar.gz /tmp/
 
-RUN cd /tmp/Xilinx_Vivado_SDK_2017.3_1005_1 && \ 
-  xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt
-
+RUN /tmp/Xilinx_Vivado_SDK_2017.3_1005_1/xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt
+RUN rm -rf /tmp/*
 
 RUN adduser --disabled-password --gecos '' vivado
 USER vivado
 WORKDIR /home/vivado
 #add vivado tools to path
-RUN echo "source /opt/Xilinx/Vivado/${VIVADO_VERSION}/settings64.sh" >> /home/vivado/.bashrc
+RUN echo "source /opt/Xilinx/Vivado/2017.3/settings64.sh" >> /home/vivado/.bashrc
 
 #copy in the license file
 RUN mkdir /home/vivado/.Xilinx
