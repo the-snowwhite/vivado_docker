@@ -16,11 +16,11 @@ RUN apt-get update && apt-get install -y \
   libxrandr2 \
   libfreetype6 \
   libfontconfig \
-  lsb_release
+  lsb-release
 
 # copy in config file
 COPY install_config.txt /tmp/
-ADD ../vivado_2017_3/Xilinx_Vivado_SDK_2017.3_1005_1.tar.gz /tmp/
+ADD Xilinx_Vivado_SDK_2017.3_1005_1.tar.gz /tmp/
 
 RUN cd /tmp/Xilinx_Vivado_SDK_2017.3_1005_1 && \ 
   xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt
