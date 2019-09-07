@@ -83,86 +83,6 @@
         <XGD_CFG draw_fill="false" draw_line="true" fill_color="0" line_color="a9a9a9" show="true"/>
         <XGD_CLOCK_CAPABLE_IO_PAD draw_fill="true" draw_line="true" fill_color="7d9eff" line_color="ff0000" show="true"/>
         <XGD_CLOCK_MANAGEMENT draw_fill="false" draw_line="true" fill_color="0" line_color="aa7c30" show="true"/>
-        <XGD_CLOCK_REGION_X0Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X0Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X0Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X0Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X0Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X10Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X10Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X10Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X10Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X10Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X11Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X11Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X11Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X11Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X11Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X12Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X12Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X12Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X12Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X12Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X13Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X13Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X13Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X13Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X13Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X14Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X14Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X14Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X14Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X14Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X15Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X15Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X15Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X15Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X15Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X1Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X1Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X1Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X1Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X1Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X2Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X2Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X2Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X2Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X2Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X3Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X3Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X3Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X3Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X3Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X4Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X4Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X4Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X4Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X4Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X5Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X5Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X5Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X5Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X5Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X6Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X6Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X6Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X6Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X6Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X7Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X7Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X7Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X7Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X7Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X8Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X8Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X8Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X8Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X8Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X9Y16 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X9Y17 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X9Y18 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X9Y19 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
-        <XGD_CLOCK_REGION_X9Y20 draw_fill="false" draw_line="false" fill_color="0" line_color="0" show="true"/>
         <XGD_CLOCK_RESOURCE draw_fill="false" draw_line="true" fill_color="0" line_color="7c4a0b" show="true"/>
         <XGD_CMAC draw_fill="true" draw_line="true" fill_color="696969" line_color="3d2d12" show="true"/>
         <XGD_CONNBOXES draw_fill="false" draw_line="true" fill_color="0" line_color="3c3c3c" show="true"/>
@@ -281,7 +201,25 @@
         <XGD_WIRE_LABELS draw_fill="false" draw_line="true" fill_color="0" line_color="808080" show="true"/>
         <XGD_XIPHY draw_fill="true" draw_line="true" fill_color="696969" line_color="3d2d12" show="true"/>
     </xdg_object_display>
-    <nocxgd_objs_display5/>
+    <nocxgd_objs_display5>
+        <XGD_ME_CHANNEL draw_fill="false" draw_line="true" fill_color="ffffff" line_color="666699" show="true"/>
+        <XGD_ME_NOCSHIM draw_fill="false" draw_line="true" fill_color="ffffff" line_color="800080" show="true"/>
+        <XGD_ME_PLSHIM draw_fill="false" draw_line="true" fill_color="ffffff" line_color="800080" show="true"/>
+        <XGD_NOC_BOUNDARY draw_fill="false" draw_line="true" fill_color="0" line_color="0" show="true"/>
+        <XGD_NOC_DDRC draw_fill="false" draw_line="true" fill_color="ffffff" line_color="25d50c" show="true"/>
+        <XGD_NOC_DRAWING_BLOCK_DDRC draw_fill="true" draw_line="true" fill_color="e9e9e9" line_color="ffffff" show="true"/>
+        <XGD_NOC_DRAWING_BLOCK_ME draw_fill="true" draw_line="true" fill_color="e9e9e9" line_color="ffffff" show="true"/>
+        <XGD_NOC_DRAWING_BLOCK_PL draw_fill="true" draw_line="true" fill_color="e9e9e9" line_color="ffffff" show="true"/>
+        <XGD_NOC_DRAWING_BLOCK_PL_NMU draw_fill="true" draw_line="true" fill_color="e9e9e9" line_color="ffffff" show="true"/>
+        <XGD_NOC_DRAWING_BLOCK_PL_NSU draw_fill="true" draw_line="true" fill_color="e9e9e9" line_color="ffffff" show="true"/>
+        <XGD_NOC_DRAWING_BLOCK_PS draw_fill="true" draw_line="true" fill_color="e9e9e9" line_color="ffffff" show="true"/>
+        <XGD_NOC_MASTER draw_fill="false" draw_line="true" fill_color="ffffff" line_color="4ab1f5" show="true"/>
+        <XGD_NOC_PORT draw_fill="false" draw_line="true" fill_color="ffffff" line_color="b7b7b7" show="true"/>
+        <XGD_NOC_SLAVE draw_fill="false" draw_line="true" fill_color="ffffff" line_color="25d50c" show="true"/>
+        <XGD_NOC_SWITCH draw_fill="false" draw_line="true" fill_color="ffffff" line_color="b7b7b7" show="true"/>
+        <XGD_NOC_TEXT draw_fill="false" draw_line="true" fill_color="0" line_color="0" show="true"/>
+        <XGD_NOC_WIRE draw_fill="false" draw_line="true" fill_color="0" line_color="b7b7b7" show="true"/>
+    </nocxgd_objs_display5>
     <BUNDLE_NET>
         <BUNDLE_NET-0 color="800000" from="1" show="false" to="1" width="1"/>
         <BUNDLE_NET-1 color="946300" from="2" show="true" to="20" width="2"/>
@@ -535,6 +473,24 @@
             <METRIC_BIN_6 color="ff6600" from="110f" show="true" to="120f"/>
             <METRIC_BIN_7 color="ff0000" from="120f" show="true" to="Infinity"/>
         </METRIC_HORIZONTAL_ROUTING_CONGESTION_PER_CLB_NEW>
+        <METRIC_INTERCONNECT_CONGESTION_LEVEL_NEW>
+            <METRIC_BIN_1 color="ffffff" from="0f" show="false" to="1f"/>
+            <METRIC_BIN_2 color="ffff99" from="1f" show="true" to="2f"/>
+            <METRIC_BIN_3 color="ffff00" from="2f" show="true" to="3f"/>
+            <METRIC_BIN_4 color="ffcc00" from="3f" show="true" to="4f"/>
+            <METRIC_BIN_5 color="ff9900" from="4f" show="true" to="5f"/>
+            <METRIC_BIN_6 color="ff6600" from="5f" show="true" to="6f"/>
+            <METRIC_BIN_7 color="ff0000" from="6f" show="true" to="Infinity"/>
+        </METRIC_INTERCONNECT_CONGESTION_LEVEL_NEW>
+        <METRIC_INTERCONNECT_DENSITY>
+            <METRIC_BIN_1 color="ffffff" from="0f" show="false" to="50f"/>
+            <METRIC_BIN_2 color="ffff99" from="50f" show="true" to="60f"/>
+            <METRIC_BIN_3 color="ffff00" from="60f" show="true" to="70f"/>
+            <METRIC_BIN_4 color="ffcc00" from="70f" show="true" to="80f"/>
+            <METRIC_BIN_5 color="ff9900" from="80f" show="true" to="90f"/>
+            <METRIC_BIN_6 color="ff6600" from="90f" show="true" to="100f"/>
+            <METRIC_BIN_7 color="ff0000" from="100f" show="true" to="Infinity"/>
+        </METRIC_INTERCONNECT_DENSITY>
         <METRIC_LUT_UTILIZATION_PER_CLB>
             <METRIC_BIN_1 color="ffffff" from="0f" show="false" to="70f"/>
             <METRIC_BIN_2 color="ffff99" from="70f" show="true" to="85f"/>
@@ -594,42 +550,6 @@
             <METRIC_BIN_6 color="ff6600" from="110f" show="true" to="120f"/>
             <METRIC_BIN_7 color="ff0000" from="120f" show="true" to="Infinity"/>
         </METRIC_VERTICAL_ROUTING_CONGESTION_PER_CLB_NEW>
-        <METRIC_X_UNIFIED_HORIZONTAL_ROUTING_CONGESTION_LEVEL_NEW>
-            <METRIC_BIN_1 color="ffffff" from="0f" show="false" to="1f"/>
-            <METRIC_BIN_2 color="ffff99" from="1f" show="true" to="2f"/>
-            <METRIC_BIN_3 color="ffff00" from="2f" show="true" to="3f"/>
-            <METRIC_BIN_4 color="ffcc00" from="3f" show="true" to="4f"/>
-            <METRIC_BIN_5 color="ff9900" from="4f" show="true" to="5f"/>
-            <METRIC_BIN_6 color="ff6600" from="5f" show="true" to="6f"/>
-            <METRIC_BIN_7 color="ff0000" from="6f" show="true" to="Infinity"/>
-        </METRIC_X_UNIFIED_HORIZONTAL_ROUTING_CONGESTION_LEVEL_NEW>
-        <METRIC_X_UNIFIED_HORIZONTAL_ROUTING_CONGESTION_NEW>
-            <METRIC_BIN_1 color="ffffff" from="0f" show="false" to="50f"/>
-            <METRIC_BIN_2 color="ffff99" from="50f" show="true" to="60f"/>
-            <METRIC_BIN_3 color="ffff00" from="60f" show="true" to="70f"/>
-            <METRIC_BIN_4 color="ffcc00" from="70f" show="true" to="80f"/>
-            <METRIC_BIN_5 color="ff9900" from="80f" show="true" to="90f"/>
-            <METRIC_BIN_6 color="ff6600" from="90f" show="true" to="100f"/>
-            <METRIC_BIN_7 color="ff0000" from="100f" show="true" to="Infinity"/>
-        </METRIC_X_UNIFIED_HORIZONTAL_ROUTING_CONGESTION_NEW>
-        <METRIC_X_UNIFIED_VERTICAL_ROUTING_CONGESTION_LEVEL_NEW>
-            <METRIC_BIN_1 color="ffffff" from="0f" show="false" to="1f"/>
-            <METRIC_BIN_2 color="ffff99" from="1f" show="true" to="2f"/>
-            <METRIC_BIN_3 color="ffff00" from="2f" show="true" to="3f"/>
-            <METRIC_BIN_4 color="ffcc00" from="3f" show="true" to="4f"/>
-            <METRIC_BIN_5 color="ff9900" from="4f" show="true" to="5f"/>
-            <METRIC_BIN_6 color="ff6600" from="5f" show="true" to="6f"/>
-            <METRIC_BIN_7 color="ff0000" from="6f" show="true" to="Infinity"/>
-        </METRIC_X_UNIFIED_VERTICAL_ROUTING_CONGESTION_LEVEL_NEW>
-        <METRIC_X_UNIFIED_VERTICAL_ROUTING_CONGESTION_NEW>
-            <METRIC_BIN_1 color="ffffff" from="0f" show="false" to="50f"/>
-            <METRIC_BIN_2 color="ffff99" from="50f" show="true" to="60f"/>
-            <METRIC_BIN_3 color="ffff00" from="60f" show="true" to="70f"/>
-            <METRIC_BIN_4 color="ffcc00" from="70f" show="true" to="80f"/>
-            <METRIC_BIN_5 color="ff9900" from="80f" show="true" to="90f"/>
-            <METRIC_BIN_6 color="ff6600" from="90f" show="true" to="100f"/>
-            <METRIC_BIN_7 color="ff0000" from="100f" show="true" to="Infinity"/>
-        </METRIC_X_UNIFIED_VERTICAL_ROUTING_CONGESTION_NEW>
     </metric_display>
     <noc_heatmap_display>
         <NOC_HEATMAP_NOC_CHANNEL_BANDWIDTH_PERCENT_USAGE>
@@ -839,6 +759,7 @@
         <ALERT_RUN_FAIL value="true"/>
         <ALERT_RUN_SUCCESS value="true"/>
         <ALERT_UNSUPPORTED_OS value="true"/>
+        <ASK_MIGRATE_DEBUG_COMMANDS value="true"/>
         <ASK_UPDATE_CREATE_CONSTRS_FILE value=""/>
         <AUTOHIDE_TCL_CONSOLE value="true"/>
         <BEL_TO_PACKAGE_PIN_RULE value="true"/>
@@ -976,4 +897,5 @@
         <XCELIUM_COMPILED_LIBRARY_DIR value=""/>
         <XCELIUM_INSTALL_PATH value=""/>
     </general>
+    <EMOTIONAL_VIEWS/>
 </preferences>
