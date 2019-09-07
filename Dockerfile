@@ -73,3 +73,6 @@ COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2018.3/vivado.
 
 # add U96 board files
 ADD /board_files.tar.gz /tools/Xilinx/Vivado/2018.3/data/boards/board_files/
+=======
+# add U96 board files
+ADD /board_files.tar.gz /tools/Xilinx/Vivado/2018.3/data/boards/board_files/
