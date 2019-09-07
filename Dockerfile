@@ -1,5 +1,31 @@
-FROM ubuntu:18.04
+FROM ubuntu:18.04 as stage1
 MAINTAINER Romel J. Torres <torres.romel@gmail.com>
+
+#install dependences for:
+# * downloading Vivado (wget)
+# * xsim (gcc build-essential to also get make)
+# * MIG tool (libglib2.0-0 libsm6 libxi6 libxrender1 libxrandr2 libfreetype6 libfontconfig)
+# * CI (git)
+RUN apt-get update && apt-get install -y \
+  build-essential \
+  git \
+  libglib2.0-0 \
+  libsm6 \
+  libxi6 \
+  libxrender1 \
+  libxrandr2 \
+  libfreetype6 \
+  libfontconfig \
+  lsb-release
+
+# copy in config file
+COPY install_config.txt /tmp/
+ADD Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz /tmp/
+
+RUN /tmp/Xilinx_Vivado_SDK_2019.1_0524_1430/xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt && \
+    rm -rf /tmp/*
+
+FROM ubuntu:16.04
 
 #install dependences for:
 # * downloading Vivado (wget)
@@ -51,12 +77,7 @@ RUN echo 'APT::Install-Recommends "0";\nAPT::Install-Suggests "0";' > \
         gem install fpm && \
         apt-get clean
 
-# copy in config file
-COPY install_config.txt /tmp/
-ADD Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz /tmp/
-
-RUN /tmp/Xilinx_Vivado_SDK_2019.1_0524_1430/xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt && \
-    rm -rf /tmp/*
+COPY --from=stage1 /tools/Xilinx /tools/Xilinx
 
 RUN adduser --disabled-password --gecos '' vivado
 USER vivado
