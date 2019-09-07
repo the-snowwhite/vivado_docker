@@ -68,6 +68,8 @@ RUN echo "source /tools/Xilinx/Vivado/2018.3/settings64.sh" >> /home/vivado/.bas
 #copy in the license file
 RUN mkdir /home/vivado/.Xilinx
 
+# customize gui (font scaling 120%)
+COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2018.3/vivado.xml
+
 # add U96 board files
 ADD /board_files.tar.gz /tools/Xilinx/Vivado/2018.3/data/boards/board_files/
-
