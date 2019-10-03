@@ -91,5 +91,5 @@ RUN echo "source /tools/Xilinx/Vivado/2019.1/settings64.sh" >> /home/vivado/.bas
 # customize gui (font scaling 125%)
 COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2019.1/vivado.xml
 
-# add U96 board files
+# add board files for ultra96 and microzed
 ADD /board_files.tar.gz /tools/Xilinx/Vivado/2019.1/data/boards/board_files/
