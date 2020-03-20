@@ -1,5 +1,5 @@
 FROM ubuntu:18.04 as stage1
-MAINTAINER Romel J. Torres <torres.romel@gmail.com>
+MAINTAINER Michael Brown <producer@holotronic.dk>
 
 #install dependences for:
 # * downloading Vivado (wget)
@@ -20,12 +20,12 @@ RUN apt-get update && apt-get install -y \
 
 # copy in config file
 COPY install_config.txt /tmp/
-ADD Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz /tmp/
+ADD Xilinx_Vitis_2019.2_1106_2127.tar.gz /tmp/
 
-RUN /tmp/Xilinx_Vivado_SDK_2019.1_0524_1430/xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt && \
+RUN /tmp/Xilinx_Vitis_2019.2_1106_2127/xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt && \
     rm -rf /tmp/*
 
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 #install dependences for:
 # * downloading Vivado (wget)
@@ -85,11 +85,11 @@ WORKDIR /home/vivado
 
 #add vivado tools to path
 #copy in the license file
-RUN echo "source /tools/Xilinx/Vivado/2019.1/settings64.sh" >> /home/vivado/.bashrc && \
+RUN echo "source /tools/Xilinx/Vivado/2019.2/settings64.sh" >> /home/vivado/.bashrc && \
     mkdir /home/vivado/.Xilinx
 
 # customize gui (font scaling 125%)
-COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2019.1/vivado.xml
+COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2019.2/vivado.xml
 
 # add U96 board files
-ADD /board_files.tar.gz /tools/Xilinx/Vivado/2019.1/data/boards/board_files/
+ADD /board_files.tar.gz /tools/Xilinx/Vivado/2019.2/data/boards/
