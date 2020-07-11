@@ -19,10 +19,10 @@ RUN apt-get update && apt-get install -y \
   lsb-release
 
 # copy in config file
-COPY install_config.txt /tmp/
-ADD Xilinx_Vitis_2019.2_1106_2127.tar.gz /tmp/
+COPY install_config-vitis.txt /tmp/
+ADD Xilinx_Unified_2020.1_0602_1208.tar.gz /tmp/
 
-RUN /tmp/Xilinx_Vitis_2019.2_1106_2127/xsetup --agree 3rdPartyEULA,WebTalkTerms,XilinxEULA --batch Install -c /tmp/install_config.txt && \
+RUN /tmp/Xilinx_Unified_2020.1_0602_1208/xsetup -a XilinxEULA,3rdPartyEULA,WebTalkTerms -b Install -c /tmp/install_config-vitis.txt && \
     rm -rf /tmp/*
 
 FROM ubuntu:18.04
@@ -85,11 +85,11 @@ WORKDIR /home/vivado
 
 #add vivado tools to path
 #copy in the license file
-RUN echo "source /tools/Xilinx/Vivado/2019.2/settings64.sh" >> /home/vivado/.bashrc && \
+RUN echo "source /tools/Xilinx/Vivado/2020.1/settings64.sh" >> /home/vivado/.bashrc && \
     mkdir /home/vivado/.Xilinx
 
 # customize gui (font scaling 125%)
-COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2019.2/vivado.xml
+COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2020.1/vivado.xml
 
 # add U96 board files
-ADD /board_files.tar.gz /tools/Xilinx/Vivado/2019.2/data/boards/
+ADD /board_files.tar.gz /tools/Xilinx/Vivado/2020.1/data/boards/
