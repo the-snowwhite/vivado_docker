@@ -16,7 +16,23 @@ RUN apt-get update && apt-get install -y \
   libxrandr2 \
   libfreetype6 \
   libfontconfig \
-  lsb-release
+  lsb-release \
+  software-properties-common
+
+RUN add-apt-repository ppa:xorg-edgers/ppa
+RUN apt-get update && apt-get install -y \
+  libgl1-mesa-glx \
+  libgl1-mesa-dri \
+  libgl1-mesa-dev
+RUN add-apt-repository --remove ppa:xorg-edgers/ppa
+RUN apt-get update && apt-get install -y \
+  net-tools \
+  unzip \
+  gcc \
+  g++ \
+  python
+COPY xrt_202010.2.6.655_18.04-amd64-xrt.deb /tmp/
+RUN apt-get install -y /tmp/xrt_202010.2.6.655_18.04-amd64-xrt.deb && rm -rf /tmp/*
 
 # copy in config file
 COPY install_config-vitis.txt /tmp/
@@ -42,7 +58,23 @@ RUN apt-get update && apt-get install -y \
   libxrandr2 \
   libfreetype6 \
   libfontconfig \
-  lsb-release
+  lsb-release \
+  software-properties-common
+
+RUN add-apt-repository ppa:xorg-edgers/ppa
+RUN apt-get update && apt-get install -y \
+  libgl1-mesa-glx \
+  libgl1-mesa-dri \
+  libgl1-mesa-dev
+RUN add-apt-repository --remove ppa:xorg-edgers/ppa
+RUN apt-get update && apt-get install -y \
+  net-tools \
+  unzip \
+  gcc \
+  g++ \
+  python
+COPY xrt_202010.2.6.655_18.04-amd64-xrt.deb /tmp/
+RUN apt-get install -y /tmp/xrt_202010.2.6.655_18.04-amd64-xrt.deb && rm -rf /tmp/*
 
 # turn off recommends on container OS
 # install required dependencies
@@ -63,7 +95,6 @@ RUN echo 'APT::Install-Recommends "0";\nAPT::Install-Suggests "0";' > \
         libxtst6 \
         libgtk2.0-0 \
         build-essential \
-        unzip \
         ruby \
         ruby-dev \
         pkg-config \
