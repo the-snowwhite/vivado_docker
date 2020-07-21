@@ -79,7 +79,7 @@ RUN echo 'APT::Install-Recommends "0";\nAPT::Install-Suggests "0";' > \
 
 COPY --from=stage1 /tools/Xilinx /tools/Xilinx
 
-RUN adduser --disabled-password --gecos '' vivado
+RUN useradd -m vivado && echo "vivado:vivado" | chpasswd && adduser vivado sudo
 USER vivado
 WORKDIR /home/vivado
 
