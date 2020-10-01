@@ -1,0 +1,72 @@
+mib@kdeneon-ws:~/Developer/the-snowwhite_git/vivado_docker$ docker build -t vitis-bionic:2020.1 .
+Sending build context to Docker daemon  38.15GB
+Step 1/21 : FROM ubuntu:18.04 as stage1
+ ---> d27b9ffc5667
+Step 2/21 : MAINTAINER Michael Brown <producer@holotronic.dk>
+ ---> Using cache
+ ---> 4a76746c619c
+Step 3/21 : RUN apt-get update && apt-get install -y   build-essential   git   libglib2.0-0   libsm6   libxi6   libxrender1   libxrandr2   libfreetype6   libfontconfig   lsb-release   software-properties-common
+ ---> Using cache
+ ---> ec673134e190
+Step 4/21 : RUN add-apt-repository ppa:xorg-edgers/ppa
+ ---> Using cache
+ ---> ab95ecb076a1
+Step 5/21 : RUN apt-get update && apt-get install -y   libgl1-mesa-glx   libgl1-mesa-dri   libgl1-mesa-dev
+ ---> Using cache
+ ---> 38a1425d2263
+Step 6/21 : RUN add-apt-repository --remove ppa:xorg-edgers/ppa
+ ---> Using cache
+ ---> e04786a64daf
+Step 7/21 : RUN apt-get update && apt-get install -y   net-tools   unzip   gcc   g++   python
+ ---> Using cache
+ ---> 6a72f8722cdb
+Step 8/21 : COPY xrt_202010.2.6.655_18.04-amd64-xrt.deb /tmp/
+ ---> Using cache
+ ---> 816da647a3d4
+Step 9/21 : RUN apt-get install -y /tmp/xrt_202010.2.6.655_18.04-amd64-xrt.deb && rm -rf /tmp/*
+ ---> Using cache
+ ---> 21246cacd003
+Step 10/21 : COPY install_config-vitis.txt /tmp/
+ ---> Using cache
+ ---> e512847d3a9c
+Step 11/21 : ADD Xilinx_Unified_2020.1_0602_1208.tar.gz /tmp/
+ ---> Using cache
+ ---> 8c25d2c8ab06
+Step 12/21 : RUN /tmp/Xilinx_Unified_2020.1_0602_1208/xsetup -a XilinxEULA,3rdPartyEULA,WebTalkTerms -b Install -c /tmp/install_config-vitis.txt &&     rm -rf /tmp/*
+ ---> Using cache
+ ---> f3fa80136b02
+Step 13/21 : COPY xrt_202010.2.6.655_18.04-amd64-xrt.deb /tmp/
+ ---> Using cache
+ ---> a5b680f21769
+Step 14/21 : RUN apt-get install -y /tmp/xrt_202010.2.6.655_18.04-amd64-xrt.deb && rm -rf /tmp/*
+ ---> Using cache
+ ---> 7885b2c158f9
+Step 15/21 : RUN echo 'APT::Install-Recommends "0";\nAPT::Install-Suggests "0";' >     /etc/apt/apt.conf.d/01norecommend &&     apt-get update &&     apt-get -y install         bzip2         libc6-i386         git         libfontconfig1         libglib2.0-0         sudo         nano         locales         libxext6         libxrender1         libxtst6         libgtk2.0-0         build-essential         ruby         ruby-dev         pkg-config         libprotobuf-dev         protobuf-compiler         python-protobuf         python-pip &&         pip install intelhex &&         echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen &&         locale-gen &&         gem install fpm &&         apt-get clean
+ ---> Using cache
+ ---> 4e8a58282d4a
+Step 16/21 : RUN useradd -m vivado && echo "vivado:vivado" | chpasswd && adduser vivado sudo
+ ---> Running in c1092c1b85a5
+Adding user `vivado' to group `sudo' ...
+Adding user vivado to group sudo
+Done.
+Removing intermediate container c1092c1b85a5
+ ---> f1ee2d042018
+Step 17/21 : USER vivado
+ ---> Running in 81244cbe4f0a
+Removing intermediate container 81244cbe4f0a
+ ---> 63fce80f46a4
+Step 18/21 : WORKDIR /home/vivado
+ ---> Running in e0e2a7457a1f
+Removing intermediate container e0e2a7457a1f
+ ---> 8174dae3c9eb
+Step 19/21 : RUN echo "source /tools/Xilinx/Vivado/2020.1/settings64.sh" >> /home/vivado/.bashrc &&     mkdir /home/vivado/.Xilinx
+ ---> Running in 7f277b8bdd23
+Removing intermediate container 7f277b8bdd23
+ ---> e167700c3a89
+Step 20/21 : COPY --chown=vivado:vivado vivado.xml /home/vivado/.Xilinx/Vivado/2020.1/vivado.xml
+ ---> b3b7ea9a5caa
+Step 21/21 : ADD /board_files.tar.gz /tools/Xilinx/Vivado/2020.1/data/boards/
+ ---> 16e413d399ed
+Successfully built 16e413d399ed
+Successfully tagged vitis-bionic:2020.1
+mib@kdeneon-ws:~/Developer/the-snowwhite_git/vivado_docker$ 
