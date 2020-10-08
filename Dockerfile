@@ -101,6 +101,10 @@ RUN echo 'APT::Install-Recommends "0";\nAPT::Install-Suggests "0";' > \
         libprotobuf-dev \
         protobuf-compiler \
         python-protobuf \
+        x11-utils \
+        device-tree-compiler \
+        parted \
+        udev \
         python-pip && \
         pip install intelhex && \
         echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
